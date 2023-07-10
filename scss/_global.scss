@@ -1,0 +1,101 @@
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+html,
+body{
+  height: 100%;
+}
+
+body{
+  font-family: 'Acrobat';
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  color: white;
+  overflow-x: hidden;
+  min-width: 320px;
+  height: 100%;
+  background-color: black;
+
+}
+.modal__open{
+  height: 100%;
+  overflow-y: hidden;
+}
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex: 1 0 auto;
+}
+.footer{
+  flex: 0 0 auto;
+}
+.container{
+  max-width: 1175px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.container-fluid{
+  max-width: 1920px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+
+
+.swiper-pagination-bullets span{
+  background-color: white;
+  opacity: 0.5;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0 8px;
+  width: 8px;
+  height: 8px;
+
+}
+span.swiper-pagination-bullet-active{
+  background-color: #DBA42C;
+  opacity: 1;
+}
+
+
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 3s;
+  --animate-delay: 1s;
+ 
+  }
+  .animate__animated.animate__fadeInRight{
+    --animate-duration: 3s;
+  --animate-delay: 1s;
+  
+  }
+  .animate__animated.animate__fadeInUp{
+    --animate-duration: 2s;
+    
+  }
+  .animate__animated.animate__pulse{
+    --animate-duration: 2s;
+    
+  }
+  .mixitup-control-active{
+    position: relative;
+    padding-bottom: 5px;
+  }
+  .mixitup-control-active::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #DBA42C;
+    margin: 0 auto;
+
+  }
+
+
+
+

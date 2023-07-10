@@ -1,0 +1,328 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'lids';
+@import 'global';
+
+.pop__up{
+  transform:  scale(0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: transparent ;
+  z-index: 10;
+  transition: all 0.3s ease;
+&.active{
+  transform:  scale(1);
+  background-color: rgba(0, 0, 0, 0.7) ;
+}
+  &-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+   padding: 10px;
+  }
+  &-body {
+    width: 700px;
+    position: relative;
+    padding: 90px 30px 100px 30px;
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    color: black;
+    text-align: center;
+   
+   
+   
+    
+    & p{
+      color: black;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      
+     
+     }
+     & form{
+      margin-bottom: 35px;
+      outline: none;
+     }
+   }
+   &-input{
+     display: block;
+     margin: 20px auto;
+     padding: 10px 20px;
+     border-radius: 10px;
+     color: black;
+     font-size: 20px;
+     max-width: 370px;
+     width: 100%;
+     font-weight: 500;
+     border: 1px rgb(201, 195, 195, 0.7) solid;
+     &:focus{
+      outline: none;
+    }
+   }
+   &-body:focus{
+    outline: none;
+   }
+   
+  
+  
+   &-btn{
+    border-radius: 10px;
+    background-color: #DBA42C;
+    padding: 12px 137px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    cursor: pointer;
+   }
+   &-btn:hover{
+    background-color: #ffae00;
+   }
+ 
+
+
+
+&-close{
+  padding: 25px;
+  color: black;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+}
+.card{
+  margin-top: 20px;
+  &__inner{
+    display: flex;
+   
+    
+  }
+ &__swiper{
+  max-width: 550px;
+  margin-right: 60px;
+  &-slide{
+    padding-bottom: 50px;
+    max-width: 550px;
+    
+  }
+  &-img{
+    max-width: 550px;
+    max-height: 456px;
+    
+  }
+ }
+ &__info{
+  margin-top: 70px;
+  &-title h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #DBA42C;
+    margin-bottom: 30px;
+  }
+  &-link {
+   display: flex;
+   gap: 10px;
+  }
+  &-link h4{
+    color: #808080;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &-link p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &-button{
+    color:  #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #DBA42C;
+    padding: 9px 30px 11px 30px;
+    border-radius: 10px;
+    margin-top: 17px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  &-button:hover{
+    background-color: #ffae00;
+  }
+ }
+}
+.card__information{
+  margin-top: 80px;
+  &-titles{
+   display: flex;
+   gap: 40px;
+  }
+  &-title h3{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 37px;
+  }
+  &-text {
+
+   max-width: 1160px;
+  }
+  &-text p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+.card__recommend{
+  padding-bottom: 20px;
+  margin-top: 100px;
+  &-card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 204px;
+  }
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+  }
+
+  &-title h2{
+    color: #DBA42C;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  &-card{
+    max-width: 360px;
+  }
+  &-image{
+    margin-top: 50px;
+  }
+  &-card-title{
+    color:  #DBA42C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 135%;
+    margin-top: 23px;
+  }
+  &-card-subtitle{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 15px;
+  }
+  &-buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  &-info{
+    padding: 10px 30px;
+    background-color: #DBA42C;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  &-info:hover{
+   background-color: #ffae00;
+   }
+  &-button{
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    background: none;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  
+  }
+  &-button:hover{
+   border: #ffae00 1px solid;
+  }
+}
+@media(max-width:910px){
+ 
+  .card{
+    &__inner{
+      display: block;
+      text-align: center;
+    }
+    &__swiper{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__info-link{
+      display: flex;
+      justify-content: center;
+    }
+    &__info{
+      margin-top: 15px;
+    }
+    &__info-title h2{
+      margin-bottom: 20px;
+    }
+    &__information{
+      margin-top: 50px;
+      &-titles{
+        justify-content: center;
+      }
+    }
+  }
+}
+@media(max-width:1130px){
+  .card__recommend{
+    max-width: 360px;
+    margin: 0 auto;
+    &-inner{
+      max-width: 360px;
+     display: block;
+     justify-content: center;
+    }
+    &-title{
+      text-align: center;
+    }
+  }
+}
+@media(max-width:450px){
+  .pop__up{
+    &-btn{
+      padding: 12px 50px;
+    }
+    &-input{
+      max-width: 190px;
+    }
+    
+  }
+}
+@media(max-width:350px){
+  
+  .card__information{
+   &-text p{
+    font-size: 18px;
+   }
+    &-title h3{
+      gap: 15px;
+      
+    }
+   
+  }
+}
